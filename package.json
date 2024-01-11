@@ -21,6 +21,7 @@
     "docker:start": "docker compose -f docker-compose.yaml up"
   },
   "dependencies": {
+    "@mojotech/json-type-validation": "^3.1.0",
     "highcharts": "^11.3.0",
     "highcharts-react-official": "^3.2.1",
     "next": "14.0.4",
