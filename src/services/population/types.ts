@@ -1,16 +1,14 @@
 export type fetchPopulationReturn = {
-  data: {
-    message: string | null;
-    result: {
-      boundaryYear?: number;
+  message: string | null;
+  result: {
+    boundaryYear?: number;
+    data: {
+      label: string;
       data: {
-        label: string;
-        data: {
-          year: number;
-          value: number;
-          rate?: number;
-        }[];
+        year: number;
+        value: number;
+        rate?: number;
       }[];
-    };
+    }[];
   };
 };

@@ -4,8 +4,6 @@ export type fetchPrefectureReturn = {
 };
 
 export type fetchPrefecturesReturn = {
-  data: {
-    message: string | null;
-    result: fetchPrefectureReturn[];
-  };
+  message: string | null;
+  result: fetchPrefectureReturn[];
 };
