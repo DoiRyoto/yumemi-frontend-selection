@@ -8,7 +8,6 @@
     "start": "next start",
     "lint": "run-p lint:*",
     "lint:tsc": "tsc --noEmit",
-    "lint:prettier": "prettier ./src --check",
     "lint:eslint": "eslint ./src --ext .ts,.tsx",
     "fix": "run-s fix:*",
     "fix:prettier": "prettier ./src --write",
@@ -21,8 +20,8 @@
     "docker:start": "docker compose -f docker-compose.yaml up"
   },
   "dependencies": {
-    "@mojotech/json-type-validation": "^3.1.0",
     "highcharts": "^11.3.0",
+    "@mojotech/json-type-validation": "^3.1.0",
     "highcharts-react-official": "^3.2.1",
     "next": "14.0.4",
     "react": "^18",
