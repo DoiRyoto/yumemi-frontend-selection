@@ -30,7 +30,6 @@ COPY --from=builder /app/node_modules  node_modules
 EXPOSE 3000
 
 ENV NEXT_TELEMETRY_DISABLED 1
-ENV NODE_ENV production
 ENV PORT 3000
 
 CMD ["npm", "run", "start"]
