@@ -1,15 +1,15 @@
 import React from "react";
 import { PrefPopulationLineChart } from "../../PrefPopulationLineChart";
-import { getPrefectures } from "@/services/prefectures/__mock__/fixture";
-import { getPopulations } from "@/services/population/__mock__/fixture";
 import { getHighChartsOptions } from "../../PrefPopulationLineChart/utils";
+import { fetchPrefectureNames } from "@/services/prefectures";
+import { fetchPopulationsByPrefCodes } from "@/services/population";
 
 type Props = {
   pref?: string;
 };
 
 export const PrefPopulationLineChartContainer = async ({ pref }: Props) => {
-  const rowPrefData = getPrefectures; // TODO: Mockを実際のデータフェッチに置き換える
+  const rowPrefData = await fetchPrefectureNames();
   const allPrefDataList = rowPrefData.result;
 
   const prefCodes =
@@ -26,7 +26,9 @@ export const PrefPopulationLineChartContainer = async ({ pref }: Props) => {
   const filteredPrefDataList = allPrefDataList.filter((item) =>
     prefCodes.includes(item.prefCode)
   );
-  const filteredPopulationDataList = getPopulations; // TODO: Mockを実際のデータフェッチに置き換える
+  const filteredPopulationDataList = await fetchPopulationsByPrefCodes(
+    prefCodes
+  );
 
   const highChartsOptions = getHighChartsOptions(
     filteredPrefDataList,

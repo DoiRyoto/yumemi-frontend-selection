@@ -7,21 +7,7 @@ import {
   constant,
   optional,
 } from "@mojotech/json-type-validation";
-
-export type fetchPopulationReturn = {
-  message: null;
-  result: {
-    boundaryYear?: number;
-    data: {
-      label: string;
-      data: {
-        year: number;
-        value: number;
-        rate?: number;
-      }[];
-    }[];
-  };
-};
+import { fetchPopulationReturn } from "./types";
 
 const fetchPopulationReturnDecoder: Decoder<fetchPopulationReturn> = object({
   message: constant(null),
@@ -35,19 +21,19 @@ const fetchPopulationReturnDecoder: Decoder<fetchPopulationReturn> = object({
             year: number(),
             value: number(),
             rate: optional(number()),
-          }),
+          })
         ),
-      }),
+      })
     ),
   }),
 });
 
 export const fetchPopulationsByPrefCodes = async (
-  prefCodes: string[] | number[],
+  prefCodes: string[] | number[]
 ): Promise<fetchPopulationReturn[]> => {
   try {
     const requests = prefCodes.map((prefCode) =>
-      fetchPopulationByPrefCode(prefCode),
+      fetchPopulationByPrefCode(prefCode)
     );
     const populations = await Promise.all(requests);
 
@@ -59,14 +45,14 @@ export const fetchPopulationsByPrefCodes = async (
 };
 
 export const fetchPopulationByPrefCode = async (
-  prefCode: string | number,
+  prefCode: string | number
 ): Promise<fetchPopulationReturn> => {
   try {
     const res = await fetch(
       `http://localhost:3000/api/population/${prefCode}`,
       {
         method: "GET",
-      },
+      }
     );
 
     const populations = res

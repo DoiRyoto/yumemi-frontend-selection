@@ -12,7 +12,7 @@ export async function GET() {
         "Content-Type": "application/json",
         "X-API-KEY": process.env.RESAS_API_KEY || "",
       },
-    },
+    }
   );
   const data = await res.json();
 

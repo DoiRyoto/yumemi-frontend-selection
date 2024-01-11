@@ -30,7 +30,6 @@ COPY --from=builder /app/node_modules  node_modules
 EXPOSE 3000
 
 ENV NEXT_TELEMETRY_DISABLED 1
-ENV RESAS_API_KEY {$RESAS_API_KEY}
 ENV PORT 3000
 
 CMD ["npm", "run", "start"]

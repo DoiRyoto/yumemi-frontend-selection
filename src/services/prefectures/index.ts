@@ -6,16 +6,7 @@ import {
   array,
   constant,
 } from "@mojotech/json-type-validation";
-
-export type fetchPrefectureReturn = {
-  prefCode: number;
-  prefName: string;
-};
-
-export type fetchPrefecturesReturn = {
-  message: null;
-  result: fetchPrefectureReturn[];
-};
+import { fetchPrefectureReturn, fetchPrefecturesReturn } from "./types";
 
 const fetchPrefectureReturnDecoder: Decoder<fetchPrefectureReturn> = object({
   prefCode: number(),
