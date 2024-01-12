@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#F5F5F5] text-[#505050] min-h-screen p-5;
+  }
+}
+
+@layer components {
+  .top {
+    @apply flex flex-col gap-3;
+  }
+  .top-title {
+    @apply text-3xl font-bold;
+  }
+
+  button {
+    @apply rounded-xl px-2 py-2 border border-[#505050] font-bold;
+  }
+
+  .toggle-button-list {
+    @apply grid grid-cols-4 gap-1 sm:grid-cols-6 lg:grid-cols-8;
+  }
+}

@@ -7,9 +7,5 @@ export default async function Page({
     pref?: string;
   };
 }) {
-  return (
-    <main>
-      <Top pref={searchParams?.pref} />
-    </main>
-  );
+  return <Top pref={searchParams?.pref} />;
 }

@@ -1,5 +1,6 @@
 import { Suspense } from "react";
 import { PrefPopulationLineChartContainer } from "./container/PrefPopulationLineChartContainer";
+import { PrefToggleListContainer } from "./container/PrefToggleListContainer";
 
 type Props = {
   pref?: string;
@@ -7,10 +8,14 @@ type Props = {
 
 export const Top = async ({ pref }: Props) => {
   return (
-    <div>
+    <main className="top">
+      <h1 className="top-title">都道府県</h1>
+      <Suspense>
+        <PrefToggleListContainer />
+      </Suspense>
       <Suspense>
         <PrefPopulationLineChartContainer pref={pref} />
       </Suspense>
-    </div>
+    </main>
   );
 };
