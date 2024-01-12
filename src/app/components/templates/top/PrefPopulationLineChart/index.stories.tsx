@@ -27,42 +27,48 @@ const optionsEmpty = getHighChartsOptions([], []);
 
 export const Default: Story = {
   args: {
-    highChartsOptions: options,
+    filteredPopulationDataList: [getPref1Population],
+    filteredPrefDataList: getPrefectures.result.slice(0, 1),
   },
   ...PCStory,
 };
 
 export const SP: Story = {
   args: {
-    highChartsOptions: options,
+    filteredPopulationDataList: [getPref1Population],
+    filteredPrefDataList: getPrefectures.result.slice(0, 1),
   },
   ...SPStory,
 };
 
 export const PCMultiPref: Story = {
   args: {
-    highChartsOptions: optionsMultiPref,
+    filteredPopulationDataList: getPopulations,
+    filteredPrefDataList: getPrefectures.result.slice(0, 2),
   },
   ...PCStory,
 };
 
 export const SPEmptyMultiPref: Story = {
   args: {
-    highChartsOptions: optionsMultiPref,
+    filteredPopulationDataList: getPopulations,
+    filteredPrefDataList: getPrefectures.result.slice(0, 2),
   },
   ...SPStory,
 };
 
 export const PCEmpty: Story = {
   args: {
-    highChartsOptions: optionsEmpty,
+    filteredPopulationDataList: [],
+    filteredPrefDataList: [],
   },
   ...PCStory,
 };
 
 export const SPEmpty: Story = {
   args: {
-    highChartsOptions: optionsEmpty,
+    filteredPopulationDataList: [],
+    filteredPrefDataList: [],
   },
   ...SPStory,
 };

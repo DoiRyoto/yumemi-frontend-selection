@@ -4,27 +4,41 @@ import { SeriesOptionsType } from "highcharts";
 
 const toHighchartsSeries = (
   prefecture: fetchPrefectureReturn,
-  population: fetchPopulationReturn
+  population: fetchPopulationReturn,
+  populationType: string
 ): SeriesOptionsType => {
+  const data = population.result.data.find(
+    (item) => item.label === populationType
+  );
+  const dataUntil2020 = data
+    ? data.data.filter((entry) => entry.year <= 2020)
+    : [];
   return {
     type: "line",
     name: prefecture.prefName,
-    data: population.result.data[0].data.map((v) => v.value),
+    data: dataUntil2020.map((d) => d.value),
   };
 };
 
 export const getHighChartsOptions = (
   prefDataList: fetchPrefectureReturn[],
-  populationDataList: fetchPopulationReturn[]
+  populationDataList: fetchPopulationReturn[],
+  popolationType?: string
 ) => {
   const series = prefDataList.map((prefData, i) => {
     const populationData = populationDataList[i];
-    return toHighchartsSeries(prefData, populationData);
+    return toHighchartsSeries(
+      prefData,
+      populationData,
+      popolationType || "総人口"
+    );
   });
+
+  console.log(series);
 
   const options: Highcharts.Options = {
     title: {
-      text: "各都道府県の年次(横軸)と人口数(縦軸)の関係",
+      text: `年次(横軸)と各都道府県の${popolationType || "総人口"}(縦軸)の関係`,
       align: "left",
     },
 

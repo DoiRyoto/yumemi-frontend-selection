@@ -6,9 +6,13 @@ import { fetchPopulationsByPrefCodes } from "@/services/population";
 
 type Props = {
   pref?: string;
+  populationType?: string;
 };
 
-export const PrefPopulationLineChartContainer = async ({ pref }: Props) => {
+export const PrefPopulationLineChartContainer = async ({
+  pref,
+  populationType,
+}: Props) => {
   const rowPrefData = await fetchPrefectureNames();
   const allPrefDataList = rowPrefData.result;
 
@@ -30,10 +34,10 @@ export const PrefPopulationLineChartContainer = async ({ pref }: Props) => {
     prefCodes
   );
 
-  const highChartsOptions = getHighChartsOptions(
-    filteredPrefDataList,
-    filteredPopulationDataList
+  return (
+    <PrefPopulationLineChart
+      filteredPopulationDataList={filteredPopulationDataList}
+      filteredPrefDataList={filteredPrefDataList}
+    />
   );
-
-  return <PrefPopulationLineChart highChartsOptions={highChartsOptions} />;
 };
