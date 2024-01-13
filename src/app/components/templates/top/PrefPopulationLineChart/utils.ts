@@ -34,8 +34,6 @@ export const getHighChartsOptions = (
     );
   });
 
-  console.log(series);
-
   const options: Highcharts.Options = {
     title: {
       text: `年次(横軸)と各都道府県の${popolationType || "総人口"}(縦軸)の関係`,
@@ -65,7 +63,7 @@ export const getHighChartsOptions = (
         label: {
           connectorAllowed: false,
         },
-        pointStart: 1980,
+        pointStart: 1960,
         pointInterval: 5,
       },
     },
