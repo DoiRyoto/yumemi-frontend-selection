@@ -1,6 +1,7 @@
 import { fetchPopulationReturn } from "@/services/population/types";
 import { fetchPrefectureReturn } from "@/services/prefectures/types";
 import { SeriesOptionsType } from "highcharts";
+import { colors, dashStyles, symbols } from "./constants";
 
 const toHighchartsSeries = (
   prefecture: fetchPrefectureReturn,
@@ -15,6 +16,9 @@ const toHighchartsSeries = (
     : [];
   return {
     type: "line",
+    marker: { symbol: symbols[prefecture.prefCode % symbols.length] },
+    color: colors[prefecture.prefCode % colors.length],
+    dashStyle: dashStyles[prefecture.prefCode % dashStyles.length],
     name: prefecture.prefName,
     data: dataUntil2020.map((d) => d.value),
   };
