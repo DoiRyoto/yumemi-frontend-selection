@@ -49,7 +49,7 @@ export const fetchPopulationByPrefCode = async (
 ): Promise<fetchPopulationReturn> => {
   try {
     const res = await fetch(
-      `https://yumemi-frontend-selection.vercel.app/api/population/${prefCode}`,
+      `${process.env.APP_URL}/api/population/${prefCode}`,
       {
         method: "GET",
       }

@@ -21,12 +21,9 @@ const fetchPrefectureReturnsDecoder: Decoder<fetchPrefecturesReturn> = object({
 export const fetchPrefectureNames =
   async (): Promise<fetchPrefecturesReturn> => {
     try {
-      const res = await fetch(
-        "https://yumemi-frontend-selection.vercel.app/api/prefectures",
-        {
-          method: "GET",
-        }
-      );
+      const res = await fetch(`${process.env.APP_URL}/api/prefectures`, {
+        method: "GET",
+      });
 
       const prefectures = await res
         .json()
