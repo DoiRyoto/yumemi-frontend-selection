@@ -155,14 +155,14 @@ exports[`PrefPopulationLineChart Snapshot: pref:北海道, populationType:年少
     filter="none"
   >
     <g
-      class="highcharts-series highcharts-series-0 highcharts-line-series highcharts-color-0"
+      class="highcharts-series highcharts-series-0 highcharts-line-series"
       clip-path="url(#highcharts-66-)"
       data-z-index="0.1"
       opacity="1"
       transform="translate(NaN,10) scale(1 1)"
     />
     <g
-      class="highcharts-markers highcharts-series-0 highcharts-line-series highcharts-color-0"
+      class="highcharts-markers highcharts-series-0 highcharts-line-series"
       clip-path="url(#highcharts-67-)"
       data-z-index="0.1"
       opacity="1"
@@ -214,22 +214,22 @@ exports[`PrefPopulationLineChart Snapshot: pref:北海道, populationType:年少
     >
       <g>
         <g
-          class="highcharts-legend-item highcharts-line-series highcharts-color-0 highcharts-series-0"
+          class="highcharts-legend-item highcharts-line-series highcharts-color-undefined highcharts-series-0"
           data-z-index="1"
           transform="translate(8,3)"
         >
           <path
             class="highcharts-graph"
-            d="M 1 5 L 15 5"
+            d="M 0 5 L 16 5"
             fill="none"
-            stroke="#2caffe"
-            stroke-linecap="round"
+            stroke="#544fc5"
+            stroke-dasharray="16,6"
             stroke-width="2"
           />
           <path
             class="highcharts-point"
-            d="M 8 5 A 0 0 0 1 1 8 5 Z"
-            fill="#2caffe"
+            d="M 8 5 L 8 5 L 8 5 L 8 5 Z"
+            fill="#544fc5"
             opacity="1"
             stroke="#ffffff"
             stroke-width="0"
@@ -423,14 +423,14 @@ exports[`PrefPopulationLineChart Snapshot: pref:北海道, populationType:生産
     filter="none"
   >
     <g
-      class="highcharts-series highcharts-series-0 highcharts-line-series highcharts-color-0"
+      class="highcharts-series highcharts-series-0 highcharts-line-series"
       clip-path="url(#highcharts-85-)"
       data-z-index="0.1"
       opacity="1"
       transform="translate(NaN,10) scale(1 1)"
     />
     <g
-      class="highcharts-markers highcharts-series-0 highcharts-line-series highcharts-color-0"
+      class="highcharts-markers highcharts-series-0 highcharts-line-series"
       clip-path="url(#highcharts-86-)"
       data-z-index="0.1"
       opacity="1"
@@ -482,22 +482,22 @@ exports[`PrefPopulationLineChart Snapshot: pref:北海道, populationType:生産
     >
       <g>
         <g
-          class="highcharts-legend-item highcharts-line-series highcharts-color-0 highcharts-series-0"
+          class="highcharts-legend-item highcharts-line-series highcharts-color-undefined highcharts-series-0"
           data-z-index="1"
           transform="translate(8,3)"
         >
           <path
             class="highcharts-graph"
-            d="M 1 5 L 15 5"
+            d="M 0 5 L 16 5"
             fill="none"
-            stroke="#2caffe"
-            stroke-linecap="round"
+            stroke="#544fc5"
+            stroke-dasharray="16,6"
             stroke-width="2"
           />
           <path
             class="highcharts-point"
-            d="M 8 5 A 0 0 0 1 1 8 5 Z"
-            fill="#2caffe"
+            d="M 8 5 L 8 5 L 8 5 L 8 5 Z"
+            fill="#544fc5"
             opacity="1"
             stroke="#ffffff"
             stroke-width="0"
@@ -691,14 +691,14 @@ exports[`PrefPopulationLineChart Snapshot: pref:北海道, populationType:老年
     filter="none"
   >
     <g
-      class="highcharts-series highcharts-series-0 highcharts-line-series highcharts-color-0"
+      class="highcharts-series highcharts-series-0 highcharts-line-series"
       clip-path="url(#highcharts-104-)"
       data-z-index="0.1"
       opacity="1"
       transform="translate(NaN,10) scale(1 1)"
     />
     <g
-      class="highcharts-markers highcharts-series-0 highcharts-line-series highcharts-color-0"
+      class="highcharts-markers highcharts-series-0 highcharts-line-series"
       clip-path="url(#highcharts-105-)"
       data-z-index="0.1"
       opacity="1"
@@ -750,22 +750,22 @@ exports[`PrefPopulationLineChart Snapshot: pref:北海道, populationType:老年
     >
       <g>
         <g
-          class="highcharts-legend-item highcharts-line-series highcharts-color-0 highcharts-series-0"
+          class="highcharts-legend-item highcharts-line-series highcharts-color-undefined highcharts-series-0"
           data-z-index="1"
           transform="translate(8,3)"
         >
           <path
             class="highcharts-graph"
-            d="M 1 5 L 15 5"
+            d="M 0 5 L 16 5"
             fill="none"
-            stroke="#2caffe"
-            stroke-linecap="round"
+            stroke="#544fc5"
+            stroke-dasharray="16,6"
             stroke-width="2"
           />
           <path
             class="highcharts-point"
-            d="M 8 5 A 0 0 0 1 1 8 5 Z"
-            fill="#2caffe"
+            d="M 8 5 L 8 5 L 8 5 L 8 5 Z"
+            fill="#544fc5"
             opacity="1"
             stroke="#ffffff"
             stroke-width="0"
@@ -1168,14 +1168,14 @@ exports[`PrefPopulationLineChart Snapshot: 北海道のみの場合 1`] = `
             filter="none"
           >
             <g
-              class="highcharts-series highcharts-series-0 highcharts-line-series highcharts-color-0"
+              class="highcharts-series highcharts-series-0 highcharts-line-series"
               clip-path="url(#highcharts-17-)"
               data-z-index="0.1"
               opacity="1"
               transform="translate(NaN,10) scale(1 1)"
             />
             <g
-              class="highcharts-markers highcharts-series-0 highcharts-line-series highcharts-color-0"
+              class="highcharts-markers highcharts-series-0 highcharts-line-series"
               clip-path="url(#highcharts-18-)"
               data-z-index="0.1"
               opacity="1"
@@ -1227,22 +1227,22 @@ exports[`PrefPopulationLineChart Snapshot: 北海道のみの場合 1`] = `
             >
               <g>
                 <g
-                  class="highcharts-legend-item highcharts-line-series highcharts-color-0 highcharts-series-0"
+                  class="highcharts-legend-item highcharts-line-series highcharts-color-undefined highcharts-series-0"
                   data-z-index="1"
                   transform="translate(8,3)"
                 >
                   <path
                     class="highcharts-graph"
-                    d="M 1 5 L 15 5"
+                    d="M 0 5 L 16 5"
                     fill="none"
-                    stroke="#2caffe"
-                    stroke-linecap="round"
+                    stroke="#544fc5"
+                    stroke-dasharray="16,6"
                     stroke-width="2"
                   />
                   <path
                     class="highcharts-point"
-                    d="M 8 5 A 0 0 0 1 1 8 5 Z"
-                    fill="#2caffe"
+                    d="M 8 5 L 8 5 L 8 5 L 8 5 Z"
+                    fill="#544fc5"
                     opacity="1"
                     stroke="#ffffff"
                     stroke-width="0"
@@ -1486,28 +1486,28 @@ exports[`PrefPopulationLineChart Snapshot: 北海道＋青森県の場合 1`] = 
             filter="none"
           >
             <g
-              class="highcharts-series highcharts-series-0 highcharts-line-series highcharts-color-0"
+              class="highcharts-series highcharts-series-0 highcharts-line-series"
               clip-path="url(#highcharts-35-)"
               data-z-index="0.1"
               opacity="1"
               transform="translate(NaN,10) scale(1 1)"
             />
             <g
-              class="highcharts-markers highcharts-series-0 highcharts-line-series highcharts-color-0"
+              class="highcharts-markers highcharts-series-0 highcharts-line-series"
               clip-path="url(#highcharts-36-)"
               data-z-index="0.1"
               opacity="1"
               transform="translate(NaN,10) scale(1 1)"
             />
             <g
-              class="highcharts-series highcharts-series-1 highcharts-line-series highcharts-color-1"
+              class="highcharts-series highcharts-series-1 highcharts-line-series"
               clip-path="url(#highcharts-35-)"
               data-z-index="0.1"
               opacity="1"
               transform="translate(NaN,10) scale(1 1)"
             />
             <g
-              class="highcharts-markers highcharts-series-1 highcharts-line-series highcharts-color-1"
+              class="highcharts-markers highcharts-series-1 highcharts-line-series"
               clip-path="url(#highcharts-36-)"
               data-z-index="0.1"
               opacity="1"
@@ -1559,22 +1559,22 @@ exports[`PrefPopulationLineChart Snapshot: 北海道＋青森県の場合 1`] = 
             >
               <g>
                 <g
-                  class="highcharts-legend-item highcharts-line-series highcharts-color-0 highcharts-series-0"
+                  class="highcharts-legend-item highcharts-line-series highcharts-color-undefined highcharts-series-0"
                   data-z-index="1"
                   transform="translate(8,3)"
                 >
                   <path
                     class="highcharts-graph"
-                    d="M 1 5 L 15 5"
+                    d="M 0 5 L 16 5"
                     fill="none"
-                    stroke="#2caffe"
-                    stroke-linecap="round"
+                    stroke="#544fc5"
+                    stroke-dasharray="16,6"
                     stroke-width="2"
                   />
                   <path
                     class="highcharts-point"
-                    d="M 8 5 A 0 0 0 1 1 8 5 Z"
-                    fill="#2caffe"
+                    d="M 8 5 L 8 5 L 8 5 L 8 5 Z"
+                    fill="#544fc5"
                     opacity="1"
                     stroke="#ffffff"
                     stroke-width="0"
@@ -1590,22 +1590,22 @@ exports[`PrefPopulationLineChart Snapshot: 北海道＋青森県の場合 1`] = 
                   </text>
                 </g>
                 <g
-                  class="highcharts-legend-item highcharts-line-series highcharts-color-1 highcharts-series-1"
+                  class="highcharts-legend-item highcharts-line-series highcharts-color-undefined highcharts-series-1"
                   data-z-index="1"
                   transform="translate(8,10)"
                 >
                   <path
                     class="highcharts-graph"
-                    d="M 1 5 L 15 5"
+                    d="M 0 5 L 16 5"
                     fill="none"
-                    stroke="#544fc5"
-                    stroke-linecap="round"
+                    stroke="#00e272"
+                    stroke-dasharray="2,2"
                     stroke-width="2"
                   />
                   <path
                     class="highcharts-point"
                     d="M 8 5 L 8 5 L 8 5 L 8 5 Z"
-                    fill="#544fc5"
+                    fill="#00e272"
                     opacity="1"
                     stroke="#ffffff"
                     stroke-width="0"
