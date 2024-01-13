@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-[#F5F5F5] text-[#505050] min-h-screen p-5;
+    @apply container mx-auto max-w-[1200px] min-h-screen p-5 bg-[#F5F5F5] text-[#505050];
   }
 
   button {
@@ -20,12 +20,25 @@
   .top {
     @apply flex flex-col gap-3;
   }
-  .top-title {
-    @apply text-3xl font-bold;
+
+  .accordion {
+    @apply flex flex-col;
+  }
+
+  .accordion-trigger {
+    @apply border-none py-0 px-2 text-2xl font-bold;
+  }
+
+  .separator {
+    @apply my-2 border border-[#505050];
   }
 
   .toggle-button-list {
     @apply grid grid-cols-4 gap-1 sm:grid-cols-6 lg:grid-cols-8;
+  }
+
+  .accordion-trigger-contents {
+    @apply flex justify-between items-center;
   }
 
   .chart {

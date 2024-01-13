@@ -26,7 +26,8 @@
     "highcharts-react-official": "^3.2.1",
     "next": "14.0.4",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-icons": "^5.0.1"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.6.7",
