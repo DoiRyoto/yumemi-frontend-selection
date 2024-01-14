@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ゆめみ フロントエンドコーディング試験
 
-## Getting Started
+## 作成したアプリケーション
 
-First, run the development server:
+https://yumemi-frontend-selection.vercel.app/
 
-```bash
+## 開発
+
+### 作業場所
+
+miro: https://miro.com/app/board/uXjVN9VLgEM=/
+
+### デザイン
+
+figma: https://www.figma.com/file/0OiPlcJiMzE1Ypy6qHDe9o/Untitled?type=design&node-id=0%3A1&mode=design&t=XwPFbzOdK2Dzhdme-1  
+storybook(chromatic): https://www.chromatic.com/library?appId=659cee5ac28827410a1ce25e
+
+### 技術選定
+
+| カテゴリ | 名前                                                      |
+| -------- | --------------------------------------------------------- |
+| App      | React, Next.js, TypeScript, TailwindCSS, clsx, Highcharts |
+| Test     | Jest                                                      |
+| Format   | ESLint, Prettier, lint-staged(+husky)                     |
+| UI       | Storybook, Chromatic, Figma                               |
+| Deploy   | Vercel                                                    |
+| Other    | Docker                                                    |
+
+### コマンド
+
+開発用サーバーを起動
+
+```
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+ビルド & サーバー起動
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+npm run build
+npm run start
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+ビルド & サーバー起動 (With Docker)
 
-## Learn More
+```
+npm run docker:build
+npm run docker:start
+```
 
-To learn more about Next.js, take a look at the following resources:
+フォーマット
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+npm run lint
+npm run fix
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+テスト
 
-## Deploy on Vercel
+```
+npm run test
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Storybook
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```
+npm run storybook
+```

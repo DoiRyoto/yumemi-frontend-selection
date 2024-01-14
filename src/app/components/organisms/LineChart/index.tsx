@@ -1,4 +1,3 @@
-// https://github.com/highcharts/highcharts-react?tab=readme-ov-file#getting-started
 "use client";
 
 import React, { useRef } from "react";
@@ -25,6 +24,7 @@ const TestLineChart = ({ options, ...props }: Props) => {
   );
 };
 
+// https://github.com/highcharts/highcharts-react?tab=readme-ov-file#getting-started
 export const LineChart = ({ options, ...props }: Props) => {
   const chartComponentRef = useRef<HighchartsReact.RefObject>(null);
 
