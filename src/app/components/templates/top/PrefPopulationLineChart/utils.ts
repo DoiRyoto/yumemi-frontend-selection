@@ -74,6 +74,11 @@ export const getHighChartsOptions = (
 
     series: series,
 
+    // TODO: noDataの場合にグラフに表示できるようにする
+    lang: {
+      noData: "都道府県を選択してください。",
+    },
+
     responsive: {
       rules: [
         {
@@ -81,10 +86,18 @@ export const getHighChartsOptions = (
             maxWidth: 500,
           },
           chartOptions: {
+            title: {
+              style: {
+                fontSize: "14px",
+              },
+            },
             legend: {
               layout: "horizontal",
               align: "center",
               verticalAlign: "bottom",
+            },
+            xAxis: {
+              tickInterval: 20,
             },
           },
         },
