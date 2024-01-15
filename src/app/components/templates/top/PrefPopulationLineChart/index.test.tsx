@@ -1,9 +1,4 @@
-import {
-  fireEvent,
-  getByLabelText,
-  render,
-  screen,
-} from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import { PrefPopulationLineChart } from ".";
 import { getPrefectures } from "@/services/prefectures/__mock__/fixture";
 import {
